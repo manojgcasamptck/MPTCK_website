@@ -302,9 +302,14 @@ export default function HomePage() {
               Join 5000+ alumni who built their careers at Model Polytechnic College Karunagappally.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link href="/admissions" className="btn-gold text-base py-3.5 px-8">
-                Apply for Admission <ArrowRight size={18} />
-              </Link>
+            <Link
+  href="https://www.polyadmission.org/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="btn-gold text-base py-3.5 px-8"
+>
+  Apply for Admission <ArrowRight size={18} />
+</Link>
               <Link href="/contact" className="bg-white/10 border border-white/30 text-white px-8 py-3.5 rounded-lg font-semibold hover:bg-white/20 transition-all inline-flex items-center gap-2">
                 Contact Us
               </Link>

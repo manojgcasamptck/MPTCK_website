@@ -114,14 +114,14 @@ export const departments: Department[] = [
   {
     slug: "computer-engineering",
     name: "Computer Engineering",
-    short: "CE",
+    short: "CT",
     icon: Monitor,
     color: "from-blue-600 to-blue-800",
     image: "/images/MPTC1.jpeg",
     description:
-      "Focuses on computer hardware, networking, and system administration with hands-on lab training aligned to industry standards.",
-    hod: "Head of Department, CE",
-    established: "1997",
+      "Focuses on Computer softwares, Artificial Intelligence, Machine Learning,Cloud Computingand system administration with hands-on lab training aligned to industry standards.",
+    hod: "Head of Department, CT",
+    
   },
   {
     slug: "cst",
@@ -131,7 +131,7 @@ export const departments: Department[] = [
     color: "from-cyan-600 to-cyan-800",
     image: "/images/MPTC2.jpeg",
     description:
-      "Covers software development, databases, web technologies, and emerging IT skills for modern tech careers.",
+      "Covers hardware, databases, web technologies, and emerging IT skills for modern tech careers.",
     hod: "Head of Department, CST",
     established: "2005",
   },
@@ -150,13 +150,13 @@ export const departments: Department[] = [
   {
     slug: "electronics",
     name: "Electronics Engineering",
-    short: "EE",
+    short: "EL",
     icon: FlaskConical,
     color: "from-violet-600 to-violet-800",
     image: "/images/MPTC1.jpeg",
     description:
       "Specialized program in electronic circuits, PCB design, instrumentation, and industrial automation systems.",
-    hod: "Head of Department, EE",
+    hod: "Head of Department, EL",
     established: "1997",
   },
   {
@@ -169,7 +169,7 @@ export const departments: Department[] = [
     description:
       "Comprehensive training in power systems, electrical machines, control systems, and renewable energy technologies.",
     hod: "Head of Department, EEE",
-    established: "1997",
+    established: "2021",
   },
   {
     slug: "mechanical",
@@ -181,7 +181,7 @@ export const departments: Department[] = [
     description:
       "CAD/CAM, manufacturing processes, thermal engineering, and workshop practice for mechanical industry readiness.",
     hod: "Head of Department, ME",
-    established: "2010",
+    established: "2023",
   },
 ];
 
@@ -190,14 +190,14 @@ export const stats = [
   { label: "Departments", value: 6, suffix: "" },
   { label: "Students", value: 1000, suffix: "+" },
   { label: "Alumni", value: 5000, suffix: "+" },
-  { label: "Placement Rate", value: 95, suffix: "%" },
-  { label: "Recruiters", value: 100, suffix: "+" },
+  { label: "Placement Rate", value: 100, suffix: "%" },
+  { label: "Recruiters", value: 130, suffix: "+" },
 ];
 
 export const whyChoose = [
   {
     title: "Excellent Placement Records",
-    description: "95%+ placement rate with 100+ companies visiting campus annually.",
+    description: "100% placement rate with 130+ companies visiting campus annually.",
   },
   {
     title: "Highly Qualified Faculty",
@@ -208,11 +208,11 @@ export const whyChoose = [
     description: "State-of-the-art labs with industry-grade equipment and software tools.",
   },
   {
-    title: "Industry Collaboration",
-    description: "Active MoUs with leading companies for internships, training, and placements.",
+    title: "Industry Collaboration & Industry On Campus(IOC)",
+    description: "Active MoUs with leading companies for internships, training, and placements.Our campus hosts two Industry on Campus (IOC) units that provide students with valuable hands-on industrial experience. One unit focuses on the production of voltage stabilizers and inverters, while the other specializes in software development. Students from various departments actively participate in these units and gain exposure to real-world industrial practices. This practical training enhances their technical skills and industry readiness, ensuring they graduate with meaningful professional experience.",
   },
   {
-    title: "Government Institution",
+    title: "Government Controlled Institution",
     description: "IHRD-managed, DTE Kerala affiliated, and AICTE approved polytechnic college.",
   },
   {
@@ -222,18 +222,19 @@ export const whyChoose = [
 ];
 
 export const placementStats = [
-  { year: "2021-22", placed: 180, companies: 35 },
-  { year: "2022-23", placed: 195, companies: 42 },
-  { year: "2023-24", placed: 210, companies: 48 },
-  { year: "2024-25", placed: 225, companies: 52 },
+  { year: "2021-22", placed: 180, companies: 3 },
+  { year: "2022-23", placed: 195, companies: 4 },
+  { year: "2023-24", placed: 210, companies: 4},
+  { year: "2024-25", placed: 225, companies: 10 },
   { year: "2025-26", placed: 515, companies: 13 },
 ];
 
 export const recruiters = [
-  "Infosys", "TCS", "Wipro", "KELTRON", "KSEB", "BPCL",
-  "HCL Technologies", "Mphasis", "UST Global", "IBS Software",
-  "Quest Global", "Cognizant", "L&T", "FACT", "CPCL",
-  "NeST Group", "V-Guard", "Sutherland", "Allianz", "RR Donnelley",
+  "HLMando", "Experion technologies", "Wipro", "KELTRON", "Centum Electronics", "Tata Electronics",
+  "HCL Technologies", "Hyundai Motors", "UST Global", "NKorr",
+  "Quiss Corp", "Ashok Leyland", "L&T", "Cadance", "Volga Instruments",
+  "NeST Group", "V-Guard", "Sutherland", "TVS Motors", "Schnider Electric","JBM Auto","Tivolt Electric","Madras Engineering Industries",
+  "ApolloTyres","Logskim" 
 ];
 
 export const events = [
@@ -247,7 +248,7 @@ export const events = [
   {
     id: 2,
     title: "Campus Placement Drive 2025-26",
-    description: "13+ companies conducted campus drive. 515 placement offers received by final year students.",
+    description: "130+ companies conducted campus drive. 515 placement offers received by final year students.",
     category: "placement",
     date: "2026-04-10",
   },
@@ -346,7 +347,7 @@ export const pageContents: Record<string, PageContent> = {
     subtitle: "A legacy of technical excellence since 1997",
     content: [
       "Model Polytechnic College Karunagappally was established in 1997 under the Institute of Human Resource Development (IHRD), Government of Kerala.",
-      "Located at Maliyekkal Junction, Edakulangara, the institution has grown into one of Kerala's premier government polytechnic colleges.",
+      "Located at Maliyekkal Junction, Edakulangara, the institution has grown into one of Kerala's premier government controlled polytechnic colleges.",
       "Over nearly three decades, MPTC has produced thousands of skilled diploma engineers who serve across India and abroad.",
     ],
   },
@@ -385,9 +386,9 @@ export const pageContents: Record<string, PageContent> = {
       "MPTC Karunagappally has consistently achieved excellence in academics, placements, and extracurricular activities.",
     ],
     bullets: [
-      "95%+ placement rate for consecutive years",
+      "100% placement rate for consecutive years",
       "515 placement offers in 2025-26 campus drive",
-      "13+ companies visited campus in 2025-26",
+      "13 companies visited campus in 2025-26",
       "Consistently above-average board exam results",
       "Active participation in state-level technical fests",
       "NSS and cultural award-winning programs",
@@ -412,10 +413,10 @@ export const pageContents: Record<string, PageContent> = {
       "MPTC offers 3-year Diploma programs in six engineering disciplines, affiliated to DTE Kerala and approved by AICTE.",
     ],
     bullets: [
-      "Diploma in Computer Engineering (CE)",
+      "Diploma in Computer Engineering (CT)",
       "Diploma in Computer Science & Technology (CST)",
-      "Diploma in Electronics & Communication Engineering (ECE)",
-      "Diploma in Electronics Engineering (EE)",
+      "Diploma in Electronics & Communication Engineering (EC)",
+      "Diploma in Electronics Engineering (EL)",
       "Diploma in Electrical & Electronics Engineering (EEE)",
       "Diploma in Mechanical Engineering (ME)",
     ],
@@ -423,7 +424,7 @@ export const pageContents: Record<string, PageContent> = {
   "/admissions/fee-structure": {
     title: "Fee Structure",
     content: [
-      "Fee structure is as per Government of Kerala and IHRD norms for government polytechnic colleges.",
+      "Fee structure is as per Government of Kerala and IHRD norms for government controlled polytechnic colleges.",
       "Scholarships and fee concessions are available for eligible students as per government guidelines.",
     ],
     bullets: [
@@ -492,10 +493,10 @@ export const pageContents: Record<string, PageContent> = {
     ],
     bullets: [
       "Overall Placement Rate: 95%+",
-      "Highest Package: ₹12 LPA",
-      "Average Package: ₹3.5 LPA",
+      "Highest Package: ₹4LPA",
+      "Average Package: ₹2.5 LPA",
       "515 offers in 2025-26 campus drive",
-      "13+ companies in latest drive",
+      "130 companies in latest drive",
     ],
   },
   "/placement/recruiters": {
@@ -589,4 +590,4 @@ export const pageContents: Record<string, PageContent> = {
       "Annual TechFest featuring project exhibitions, coding competitions, robotics events, and expert talks.",
     ],
   },
-};
+}

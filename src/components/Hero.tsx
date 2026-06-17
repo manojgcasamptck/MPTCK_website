@@ -58,7 +58,7 @@ export default function Hero() {
           className="max-w-3xl"
         >
           <div className="inline-flex items-center gap-2 bg-gold-400/20 border border-gold-400/40 rounded-full px-4 py-1.5 text-gold-400 text-sm font-medium mb-6">
-            Established {siteConfig.established} · Government Polytechnic · IHRD Kerala
+            Established {siteConfig.established} · Government Controlled Polytechnic · IHRD Kerala
           </div>
 
           <h1 className="font-poppins font-bold text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight mb-4">
