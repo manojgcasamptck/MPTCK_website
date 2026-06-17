@@ -18,7 +18,18 @@ export default function AdmissionsPage() {
         <div className="max-w-4xl mx-auto px-4">
           <Reveal>
             <p className="text-slate-600 text-lg mb-8">
-              Admissions to all diploma programs are through the centralized POLYCAP portal managed by DTE Kerala.
+            <p>
+  Admissions to all diploma programs are through the centralized{" "}
+  <a
+    href="https://polyadmission.org/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-blue-600 hover:underline"
+  >
+    POLYCAP
+  </a>{" "}
+  portal managed by DTE Kerala.
+</p>
             </p>
             <div className="grid sm:grid-cols-2 gap-4">
               {links.map((l) => (
