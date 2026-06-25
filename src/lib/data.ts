@@ -2,7 +2,7 @@ import {
   Monitor,
   Cpu,
   Zap,
-  FlaskConical,
+  CircuitBoard,
   Settings,
   type LucideIcon,
 } from "lucide-react";
@@ -107,6 +107,11 @@ export interface Department {
   image: string;
   description: string;
   hod?: string;
+  hodPhone: string;
+  faculty?: {
+    name: string;
+    phone: string;
+  }[];
   established?: string;
 }
 
@@ -117,11 +122,32 @@ export const departments: Department[] = [
     short: "CT",
     icon: Monitor,
     color: "from-blue-600 to-blue-800",
-    image: "/images/MPTC1.jpeg",
+    image: "/images/ctimg.jpg",
     description:
       "Focuses on Computer softwares, Artificial Intelligence, Machine Learning,Cloud Computingand system administration with hands-on lab training aligned to industry standards.",
-    hod: "Head of Department, CT",
-    
+    //hod: "Head of Department, CT",
+      hod: "Manoj G",
+      hodPhone: "+91 9961481828",
+
+      faculty: [
+        {
+          name: "Jayalekshmi V",
+          phone: "+91 9876543211",
+        },
+        {
+          name: "Femina H",
+          phone: "+91 9876543212",
+        },
+        {
+          name: "Vishnu Babu",
+          phone: "+91 9876543213",
+        },
+        {
+          name: "Sreejith",
+          phone: "+91 9876543214",
+        },
+      ],
+      
   },
   {
     slug: "cst",
@@ -129,10 +155,30 @@ export const departments: Department[] = [
     short: "CST",
     icon: Cpu,
     color: "from-cyan-600 to-cyan-800",
-    image: "/images/MPTC2.jpeg",
+    image: "/images/cstimg.jpg",
     description:
       "Covers hardware, databases, web technologies, and emerging IT skills for modern tech careers.",
-    hod: "Head of Department, CST",
+      hod: "Manoj G",
+      hodPhone: "+91 9961481828",
+
+      faculty: [
+        {
+          name: "Jayalekshmi V",
+          phone: "+91 9876543211",
+        },
+        {
+          name: "Femina H",
+          phone: "+91 9876543212",
+        },
+        {
+          name: "Vishnu Babu",
+          phone: "+91 9876543213",
+        },
+        {
+          name: "Sreejith",
+          phone: "+91 9876543214",
+        },
+      ],
     established: "2005",
   },
   {
@@ -141,22 +187,62 @@ export const departments: Department[] = [
     short: "ECE",
     icon: Zap,
     color: "from-indigo-600 to-indigo-800",
-    image: "/images/MPTC3.jpeg",
+    image: "/images/ecimg.jpg",
     description:
       "Training in communication systems, embedded electronics, IoT, and signal processing with advanced lab facilities.",
-    hod: "Head of Department, ECE",
+      hod: "Manoj G",
+      hodPhone: "+91 9961481828",
+
+      faculty: [
+        {
+          name: "Jayalekshmi V",
+          phone: "+91 9876543211",
+        },
+        {
+          name: "Femina H",
+          phone: "+91 9876543212",
+        },
+        {
+          name: "Vishnu Babu",
+          phone: "+91 9876543213",
+        },
+        {
+          name: "Sreejith",
+          phone: "+91 9876543214",
+        },
+      ],
     established: "1997",
   },
   {
     slug: "electronics",
     name: "Electronics Engineering",
     short: "EL",
-    icon: FlaskConical,
+    icon: CircuitBoard,
     color: "from-violet-600 to-violet-800",
-    image: "/images/MPTC1.jpeg",
+    image: "/images/elimg.jpg",
     description:
       "Specialized program in electronic circuits, PCB design, instrumentation, and industrial automation systems.",
-    hod: "Head of Department, EL",
+      hod: "Manoj G",
+      hodPhone: "+91 9961481828",
+
+      faculty: [
+        {
+          name: "Jayalekshmi V",
+          phone: "+91 9876543211",
+        },
+        {
+          name: "Femina H",
+          phone: "+91 9876543212",
+        },
+        {
+          name: "Vishnu Babu",
+          phone: "+91 9876543213",
+        },
+        {
+          name: "Sreejith",
+          phone: "+91 9876543214",
+        },
+      ],
     established: "1997",
   },
   {
@@ -165,10 +251,30 @@ export const departments: Department[] = [
     short: "EEE",
     icon: Zap,
     color: "from-amber-600 to-amber-800",
-    image: "/images/MPTC2.jpeg",
+    image: "/images/eeeimg.jpg",
     description:
       "Comprehensive training in power systems, electrical machines, control systems, and renewable energy technologies.",
-    hod: "Head of Department, EEE",
+      hod: "Manoj G",
+      hodPhone: "+91 9961481828",
+
+      faculty: [
+        {
+          name: "Jayalekshmi V",
+          phone: "+91 9876543211",
+        },
+        {
+          name: "Femina H",
+          phone: "+91 9876543212",
+        },
+        {
+          name: "Vishnu Babu",
+          phone: "+91 9876543213",
+        },
+        {
+          name: "Sreejith",
+          phone: "+91 9876543214",
+        },
+      ],
     established: "2021",
   },
   {
@@ -177,10 +283,30 @@ export const departments: Department[] = [
     short: "ME",
     icon: Settings,
     color: "from-orange-600 to-orange-800",
-    image: "/images/MPTC3.jpeg",
+    image: "/images/meimg.jpg",
     description:
       "CAD/CAM, manufacturing processes, thermal engineering, and workshop practice for mechanical industry readiness.",
-    hod: "Head of Department, ME",
+      hod: "Manoj G",
+      hodPhone: "+91 9961481828",
+
+      faculty: [
+        {
+          name: "Jayalekshmi V",
+          phone: "+91 9876543211",
+        },
+        {
+          name: "Femina H",
+          phone: "+91 9876543212",
+        },
+        {
+          name: "Vishnu Babu",
+          phone: "+91 9876543213",
+        },
+        {
+          name: "Sreejith",
+          phone: "+91 9876543214",
+        },
+      ],
     established: "2023",
   },
 ];

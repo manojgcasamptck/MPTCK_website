@@ -39,11 +39,42 @@ export default async function DepartmentPage({
             </div>
             <p className="text-slate-600 text-lg leading-relaxed mb-6">{dept.description}</p>
             <ul className="space-y-2 text-slate-600 mb-8">
-              {dept.hod && <li><strong>HOD:</strong> {dept.hod}</li>}
+            {dept.hod && (
+            <li>
+               <strong>HOD:</strong> {dept.hod}
+            </li>
+            )}
+
+            {dept.hodPhone && (
+           <li>
+               <strong>Contact:</strong> {dept.hodPhone}
+            </li>
+            )}
               {dept.established && <li><strong>Established:</strong> {dept.established}</li>}
               <li><strong>Duration:</strong> 3 Years Diploma</li>
               <li><strong>Affiliation:</strong> DTE Kerala | AICTE Approved</li>
             </ul>
+            {dept.faculty && (
+  <div className="bg-slate-50 rounded-xl p-5 mb-8">
+    <h3 className="font-bold text-lg mb-4">
+      Faculty Members
+    </h3>
+
+    <ul className="space-y-3">
+      {dept.faculty.map((member, index) => (
+        <li key={index}>
+          <div className="font-medium">
+            {member.name}
+          </div>
+
+          <div className="text-primary-600 text-sm">
+            {member.phone}
+          </div>
+        </li>
+      ))}
+    </ul>
+  </div>
+)}
             <Link href="/admissions" className="btn-primary">Apply for {dept.short}</Link>
           </Reveal>
         </div>
