@@ -90,13 +90,13 @@ export default function PopupNotice() {
   className="
       absolute
       top-0
-      right-0
+      right--1
       z-[999]
       bg-white-50
       hover:bg-red-400
       text-black
-      w-10
-      h-10
+      w-8
+      h-8
       rounded-full
       text-1xl
       font-bold
@@ -104,7 +104,7 @@ export default function PopupNotice() {
       transition
   "
 >
-    ×close
+    close
 </button>
 
 <div className="p-2">
