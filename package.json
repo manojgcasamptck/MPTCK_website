@@ -6,17 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "server": "node server/index.js"
+    "lint": "next lint"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.108.2",
-    "bcryptjs": "^3.0.3",
+    "@supabase/supabase-js": "^2.110.0",
     "clsx": "^2.1.1",
-    "cors": "^2.8.6",
-    "express": "^5.2.1",
     "framer-motion": "^12.40.0",
-    "jsonwebtoken": "^9.0.3",
     "lucide-react": "^1.18.0",
     "next": "^16.2.9",
     "react": "^19.2.7",
@@ -27,15 +22,11 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.3.1",
-    "@types/bcryptjs": "^2.4.6",
-    "@types/jsonwebtoken": "^9.0.10",
     "@types/node": "^25.9.3",
-    "@types/pg": "^8.20.0",
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
     "eslint": "^9.39.4",
     "eslint-config-next": "^16.2.9",
-    "pg": "^8.21.0",
     "postcss": "^8.5.15",
     "tailwindcss": "^4.3.1",
     "typescript": "^6.0.3"
