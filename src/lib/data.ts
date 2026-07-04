@@ -50,6 +50,10 @@ export const navigation: NavItem[] = [
     ],
   },
   {
+    label: "Student Support",
+    href: "/grievance",
+  },
+  {
     label: "Academics",
     href: "/academics",
     children: [
@@ -398,7 +402,7 @@ export const events = [
 
 export const testimonials = [
   {
-    name: "Sreedev b S",
+    name: "Sreedev B S",
     department: "Computer Engineering",
     batch: 2026,
     content: "MPTC gave me the technical foundation that helped me land my dream job at Experion Technologies. The faculty are incredibly supportive.",

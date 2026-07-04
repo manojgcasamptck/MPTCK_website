@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mobile, Mail, MapPin } from "lucide-react";
 import { FaInstagram, FaFacebookF } from "react-icons/fa";
 import { navigation, departments } from "@/lib/data";
 import { siteConfig } from "@/lib/utils";
@@ -85,6 +85,10 @@ export default function Footer() {
               <li className="flex gap-2">
                 <Phone size={16} className="shrink-0 text-gold-400" />
                 <span>{siteConfig.phone}</span>
+              </li>
+              <li className="flex gap-2">
+                <Phone size={16} className="shrink-0 text-gold-400" />
+                <span>{siteConfig.mobile}</span>
               </li>
               <li className="flex gap-2">
                 <Mail size={16} className="shrink-0 text-gold-400" />

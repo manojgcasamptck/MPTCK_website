@@ -11,10 +11,10 @@ export const siteConfig = {
   tagline: "Empowering Future Engineers Since 1997",
   description:
     "Model Polytechnic College Karunagappally — Premier Government Controlled Polytechnic under IHRD, Kerala. Diploma engineering programs with excellent placement records.",
-  url: "https://mptkarunagappally.ihrd.ac.in",
+  url: "https://www.mptkpy.ac.in",
   email: "mptkarunagappally.ihrd@gmail.com",
   phone: "0476-2623597",
-  mobile: ["8547005083", "9447488348"],
+  mobile: ["8547005083"," / ", "9447488348"],
   address:
     "Maliyekkal Junction, Edakulangara P.O, Karunagappally, Kollam Dt., Kerala – 690523",
   established: 1997,
