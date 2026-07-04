@@ -81,7 +81,6 @@ export const navigation: NavItem[] = [
       { label: "Laboratories", href: "/facilities/laboratories" },
       { label: "Workshops", href: "/facilities/workshops" },
       { label: "Smart Classrooms", href: "/facilities/smart-classrooms" },
-      { label: "Hostel", href: "/facilities/hostel" },
       { label: "Cafeteria", href: "/facilities/cafeteria" },
       { label: "Sports", href: "/facilities/sports" },
     ],
@@ -672,12 +671,6 @@ export const pageContents: Record<string, PageContent> = {
     title: "Smart Classrooms",
     content: [
       "Digital classrooms with projectors, smart boards, and audio-visual aids for enhanced learning.",
-    ],
-  },
-  "/facilities/hostel": {
-    title: "Hostel",
-    content: [
-      "Separate hostel facilities available for male and female students with adequate amenities.",
     ],
   },
   "/facilities/cafeteria": {

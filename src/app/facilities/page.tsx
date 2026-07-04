@@ -7,7 +7,6 @@ const links = [
   { href: "/facilities/laboratories", label: "Laboratories" },
   { href: "/facilities/workshops", label: "Workshops" },
   { href: "/facilities/smart-classrooms", label: "Smart Classrooms" },
-  { href: "/facilities/hostel", label: "Hostel" },
   { href: "/facilities/cafeteria", label: "Cafeteria" },
   { href: "/facilities/sports", label: "Sports" },
 ];
