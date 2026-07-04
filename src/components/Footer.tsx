@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Phone, Mobile, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
 import { FaInstagram, FaFacebookF } from "react-icons/fa";
 import { navigation, departments } from "@/lib/data";
 import { siteConfig } from "@/lib/utils";
