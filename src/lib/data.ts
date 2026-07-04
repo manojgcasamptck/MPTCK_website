@@ -127,7 +127,7 @@ export const departments: Department[] = [
       "Focuses on Computer softwares, Artificial Intelligence, Machine Learning,Cloud Computing and system administration .The curriculum imparts theoretical and practical dimensions of computing — from algorithms and data structures to database management and web technologies. Students gain hands-on experience with modern programming languages and tools, building skills relevant to software engineering, data analytics, and emerging tech domains. 3-Year Diploma · AICTE Approved",
     //hod: "Head of Department, CT",
       hod: "Manoj G",
-      hodPhone: "+91 9961481828",
+      hodPhone: "+91 8848326303",
 
       faculty: [
         {
@@ -143,7 +143,7 @@ export const departments: Department[] = [
           phone: "+91 9633449667",
         },
         {
-          name: "Sreejith",
+          name: "Sreejith S",
           phone: "+91 9544649904",
         },
       ],
@@ -158,7 +158,7 @@ export const departments: Department[] = [
     image: "/images/cstimg.jpg",
     description:
       "Equips students with a solid foundation in computer hardware, software systems and network infrastructure. The curriculum spans programming, IoT Systems, Cloud Computing and embedded systems — preparing graduates for roles in System development, hardware design, and IT support across industries.3-Year Diploma · AICTE Approved",
-      hod: "Muhammad Nijam B",
+      hod: "Muhammed Nijam B",
       hodPhone: "+91 9400071307",
 
       faculty: [
@@ -167,16 +167,16 @@ export const departments: Department[] = [
           phone: "+91 7012307234",
         },
         {
-          name: "Jinumol",
+          name: "Jinumol V T",
           phone: "+91 7902636250",
         },
         {
-          name: "Rejeena",
-          phone: "+91 12343546",
+          name: "Rejeena H",
+          phone: "+91 9995797742",
         },
         {
-          name: "Athira",
-          phone: "+91 9876543214",
+          name: "Athira A",
+          phone: "+91 7592023792",
         },
       ],
     established: "1997",
@@ -191,20 +191,20 @@ export const departments: Department[] = [
     description:
       "Bridges electronics and communication systems, offering training in areas such as wireless networks, optical fibre, satellite communication,  embedded electronics, IoT and signal processing. Graduates are well-positioned for careers in telecom, broadcasting, defence electronics, and the rapidly growing IoT and 5G sectors.3-Year Diploma · AICTE Approved",
       hod: "Lunamma Joseph",
-      hodPhone: "+91 9961481828",
+      hodPhone: "+91 9495292116",
 
       faculty: [
         {
-          name: "Archana",
-          phone: "+91 9876543211",
+          name: "Archana G S",
+          phone: "+91 7012209736",
         },
         {
           name: "Surya R",
-          phone: "+91 9876543212",
+          phone: "+91 9895497939",
         },
         {
-          name: "Grace",
-          phone: "+91 9876543213",
+          name: "Grace May S",
+          phone: "+91 9809019860",
         },
        
       ],
@@ -219,17 +219,21 @@ export const departments: Department[] = [
     image: "/images/elimg.jpg",
     description:
       "Covers the fundamentals of electronic circuits, devices, and systems — including analog and digital electronics,microcontrollers,consumer electronics,mobile communication and industrial automation. Students develop strong technical skills applicable in in electronic circuits, PCB design, instrumentation, and industrial automation systems . 3-Year Diploma · AICTE Approved.",
-      hod: "Rajesh",
-      hodPhone: "+91 9961481828",
+      hod: "Rajesh R",
+      hodPhone: "+91 7907325067",
 
       faculty: [
         {
-          name: "Sobha V",
-          phone: "+91 9876543211",
+          name: "Sobha Kumari G S ",
+          phone: "+91 9495623812",
         },
         {
-          name: "Shiji",
-          phone: "+91 9876543212",
+          name: "Shiji S D",
+          phone: "+91 7511121204",
+        },
+        {
+          name: "Angel Micheal",
+          phone: "+91 9446750400",
         },
       
       ],
@@ -245,15 +249,25 @@ export const departments: Department[] = [
     description:
       "Provides comprehensive training in electrical machines, power systems, control engineering, and industrial electronics. Students learn to design, operate, and maintain electrical installations and power distribution systems — with growing relevance in renewable energy, electric vehicles, and smart grid technologies.3-Year Diploma · AICTE Aproved",
       hod: "Mahija M",
-      hodPhone: "+91 9447522147",
+      hodPhone: "+91 8590502231",
 
       faculty: [
         {
-          name: "Sincy",
-          phone: "+91 9876543211",
+          name: "Sincy Thomas",
+          phone: "+91 9744564136",
         },
-        
-       
+        {
+          name: "Devooty A M",
+          phone: "+91 7994793194",
+        },
+        {
+          name: "Aswathy A",
+          phone: "+91 7736040640",
+        },
+        {
+          name: "Anand S",
+          phone: "+91 9645074042",
+        },
       ],
     established: "2021",
   },
@@ -271,20 +285,20 @@ export const departments: Department[] = [
 
       faculty: [
         {
-          name: "Lect1 V",
-          phone: "+91 9876543211",
+          name: "Afsal A",
+          phone: "+91 9746886174",
         },
         {
-          name: "Lect2 H",
-          phone: "+91 9876543212",
+          name: "Paul J Nainan",
+          phone: "+91 7994230943",
         },
         {
-          name: "Lect3",
-          phone: "+91 9876543213",
+          name: "Javed Huzain",
+          phone: "+91 8943899737",
         },
         {
-          name: "lect4",
-          phone: "+91 9876543214",
+          name: "Anoop M R",
+          phone: "+91 9745978138",
         },
       ],
     established: "2023",
