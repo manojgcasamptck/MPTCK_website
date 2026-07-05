@@ -24,6 +24,7 @@ export const navigation: NavItem[] = [
       { label: "Principal's Message", href: "/about/principal-message" },
       { label: "Governing Body", href: "/about/governing-body" },
       { label: "Achievements", href: "/about/achievements" },
+      { label: "Mandatory Disclosure", href: "/mandatory-disclosure"},
     ],
   },
   {
@@ -51,7 +52,17 @@ export const navigation: NavItem[] = [
   },
   {
     label: "Student Support",
-    href: "/grievance",
+    href: "#",
+    children: [
+      {
+        label: "Grievance Redressal",
+        href: "/grievance",
+      },
+      {
+        label: "Anti Ragging",
+        href: "/anti-ragging",
+      },
+    ],
   },
   {
     label: "Academics",

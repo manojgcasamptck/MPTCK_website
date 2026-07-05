@@ -150,7 +150,7 @@ export default function HomePage() {
               <div className="grid grid-cols-2 gap-4">
                 {[
                   { label: "Highest Package", display: "4 LPA" },
-                  { label: "Average Package", display: "3.5 LPA" },
+                  { label: "Average Package", display: "2.5 LPA" },
                   { label: "Students Placed (2025-26)", val: 515, sfx: "+" },
                   { label: "Companies (2025-26)", val: 13, sfx: "+" },
                 ].map((item) => (
