@@ -1,42 +1,95 @@
-import PageHero from "@/components/PageHero";
-import Reveal from "@/components/ui/Reveal";
-import { Download, FileText } from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
 
-const downloads = [
-  { title: "Admission Prospectus 2025-26", file: "/images/brochure.jpeg", type: "Brochure" },
-  { title: "Application Form Guidelines", file: "#", type: "PDF" },
-  { title: "Academic Calendar 2025-26", file: "#", type: "PDF" },
-  { title: "Fee Structure Notification", file: "#", type: "PDF" },
-  { title: "Placement Report 2025-26", file: "#", type: "Report" },
-  { title: "Anti-Ragging Affidavit", file: "#", type: "Form" },
+const departments = [
+  {
+    slug: "computer",
+    name: "Computer Engineering",
+    //image: "/images/departments/computer.jpg",
+  },
+  {
+    slug: "electronics",
+    name: "Electronics Engineering",
+    //image: "/images/departments/electronics.jpg",
+  },
+  {
+    slug: "communication",
+    name: "Electronics & Communication Engineering",
+    //image: "/images/departments/general.jpg",
+  },
+  {
+    slug: "electrical",
+    name: "Electrical & Electronics Engineering",
+    //image: "/images/departments/electrical.jpg",
+  },
+  {
+    slug: "mechanical",
+    name: "Mechanical Engineering",
+    //image: "/images/departments/mechanical.jpg",
+  },
+  {
+    slug: "hardware",
+    name: "Computer Science & Technology ",
+    //image: "/images/departments/hardware.jpg",
+  },
+ 
 ];
 
 export default function DownloadsPage() {
   return (
-    <>
-      <PageHero title="Downloads" subtitle="Forms, brochures, and documents" />
-      <section className="py-16">
-        <div className="max-w-3xl mx-auto px-4 space-y-4">
-          {downloads.map((d, i) => (
-            <Reveal key={d.title} delay={i * 60}>
-              <a
-                href={d.file}
-                download={d.file !== "#"}
-                className="flex items-center gap-4 p-5 bg-white rounded-xl border hover:border-primary-300 hover:shadow-md transition-all group"
-              >
-                <div className="w-12 h-12 bg-primary-50 rounded-xl flex items-center justify-center group-hover:bg-primary-500 transition-colors">
-                  <FileText size={22} className="text-primary-500 group-hover:text-white" />
-                </div>
-                <div className="flex-1">
-                  <div className="font-medium text-primary-900">{d.title}</div>
-                  <div className="text-sm text-slate-500">{d.type}</div>
-                </div>
-                <Download size={20} className="text-slate-400 group-hover:text-primary-500" />
-              </a>
-            </Reveal>
-          ))}
+    <main className="min-h-screen bg-gray-50">
+
+      <section className="bg-primary-900 text-white py-16">
+
+        <div className="max-w-7xl mx-auto px-6">
+
+          <h1 className="text-5xl font-bold">
+            Academic Downloads
+          </h1>
+
+          <p className="mt-4 text-lg text-primary-100">
+            Select your department to access notes,
+            question papers, lab manuals and study materials.
+          </p>
+
         </div>
+
       </section>
-    </>
+
+      <section className="max-w-7xl mx-auto px-6 py-16">
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          {departments.map((dept) => (
+
+            <Link
+              key={dept.slug}
+              href={`/downloads/${dept.slug}`}
+              className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition overflow-hidden"
+            >
+
+             
+
+              <div className="p-6">
+
+                <h2 className="text-xl font-bold text-primary-900">
+                  {dept.name}
+                </h2>
+
+                <p className="text-slate-600 mt-2">
+                  Semester-wise study materials
+                </p>
+
+              </div>
+
+            </Link>
+
+          ))}
+
+        </div>
+
+      </section>
+
+    </main>
   );
 }
