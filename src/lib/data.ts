@@ -51,7 +51,18 @@ export const navigation: NavItem[] = [
     ],
   },
   {
-    label: "Student Support",
+    label: "Academics",
+    href: "/academics",
+    children: [
+      { label: "Curriculum", href: "/academics/curriculum" },
+      { label: "Academic Calendar", href: "/academics/calendar" },
+      { label: "Examination", href: "/academics/examination" },
+      { label: "Timetable", href: "/academics/timetable" },
+      { label: "Downloads", href: "/downloads" },
+    ],
+  },
+  {
+    label: "Students",
     href: "#",
     children: [
       {
@@ -62,16 +73,15 @@ export const navigation: NavItem[] = [
         label: "Anti Ragging",
         href: "/anti-ragging",
       },
-    ],
-  },
-  {
-    label: "Academics",
-    href: "/academics",
-    children: [
-      { label: "Curriculum", href: "/academics/curriculum" },
-      { label: "Academic Calendar", href: "/academics/calendar" },
-      { label: "Examination", href: "/academics/examination" },
-      { label: "Timetable", href: "/academics/timetable" },
+    
+      {
+        label: "Student's Life",
+        href: "/students-life",
+      },
+      {
+        label: "Alumni",
+        href: "/alumni",
+      },
     ],
   },
   {
@@ -96,20 +106,9 @@ export const navigation: NavItem[] = [
       { label: "Sports", href: "/facilities/sports" },
     ],
   },
-  {
-    label: "Student Life",
-    href: "/student-life",
-    children: [
-      { label: "Clubs", href: "/student-life/clubs" },
-      { label: "NSS", href: "/student-life/nss" },
-      { label: "Arts & Sports", href: "/student-life/arts-sports" },
-      { label: "Technical Fest", href: "/student-life/technical-fest" },
-    ],
-  },
+
   { label: "Gallery", href: "/gallery" },
-  { label: "Downloads", href: "/downloads" },
-  { label: "Alumni", href: "/alumni" },
-  { label: "Contact", href: "/contact" },
+  
 ];
 
 export interface Department {

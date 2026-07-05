@@ -95,18 +95,7 @@ export default function Navbar() {
               )}
             </nav>
 
-            <div className="flex items-center gap-3">
-              <Link href="/admissions" className="hidden md:inline-flex btn-gold text-sm py-2 px-4">
-                Apply Now
-              </Link>
-              <button
-                className="xl:hidden p-2 text-primary-900"
-                onClick={() => setMobileOpen(!mobileOpen)}
-                aria-label="Toggle menu"
-              >
-                {mobileOpen ? <X size={24} /> : <Menu size={24} />}
-              </button>
-            </div>
+            
           </div>
         </div>
 
