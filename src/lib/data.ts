@@ -73,10 +73,8 @@ export const navigation: NavItem[] = [
         label: "Anti Ragging",
         href: "/anti-ragging",
       },
-    
-      {
-        label: "Student's Life",
-        href: "/students-life",
+      { label: "Sports", 
+        href: "/facilities/sports", 
       },
       {
         label: "Alumni",
@@ -103,7 +101,7 @@ export const navigation: NavItem[] = [
       { label: "Workshops", href: "/facilities/workshops" },
       { label: "Smart Classrooms", href: "/facilities/smart-classrooms" },
       { label: "Cafeteria", href: "/facilities/cafeteria" },
-      { label: "Sports", href: "/facilities/sports" },
+     
     ],
   },
 

@@ -43,7 +43,7 @@ export default function Navbar() {
                 <Image src="/images/eleimg.jpeg" alt="MPTC Logo" width={48} height={48} className="object-cover w-full h-full" />
               </div>
               <div className="hidden sm:block">
-                <div className="font-poppins font-bold text-primary-900 text-sm md:text-base leading-tight">
+                <div className="font-poppins font-bold text-blue-700 text-sm md:text-base leading-tight">
                   Model Polytechnic College
                 </div>
                 <div className="text-gold-500 text-xs font-semibold">Karunagappally</div>
@@ -61,7 +61,7 @@ export default function Navbar() {
                   >
                     <Link
                       href={item.href}
-                      className="flex items-center gap-1 px-2.5 py-2 text-sm font-medium text-slate-700 hover:text-primary-500 transition-colors rounded-lg hover:bg-primary-50"
+                      className="flex items-center gap-1 px-2.5 py-2 text-sm font-bold text-red-600 hover:text-red-700 rounded-lg hover:bg-red-50 transition-colors"
                     >
                       {item.label}
                       <ChevronDown size={14} className="opacity-60" />
@@ -76,7 +76,7 @@ export default function Navbar() {
                         <Link
                           key={child.href}
                           href={child.href}
-                          className="block px-4 py-2 text-sm text-slate-600 hover:text-primary-500 hover:bg-primary-50 transition-colors"
+                          className="block px-4 py-2 text-sm font-medium text-red-400 hover:text-red-500 hover:bg-red-50 transition-colors"
                         >
                           {child.label}
                         </Link>
@@ -87,7 +87,7 @@ export default function Navbar() {
                   <Link
                     key={item.label}
                     href={item.href}
-                    className="px-2.5 py-2 text-sm font-medium text-slate-700 hover:text-primary-500 transition-colors rounded-lg hover:bg-primary-50"
+                    className="px-2.5 py-2 text-sm font-bold text-red-600 hover:text-red-700 transition-colors rounded-lg hover:bg-red-50"
                   >
                     {item.label}
                   </Link>
@@ -106,7 +106,7 @@ export default function Navbar() {
                 <div key={item.label}>
                   <Link
                     href={item.href}
-                    className="block py-2.5 px-3 font-medium text-slate-700 hover:bg-primary-50 rounded-lg"
+                    className="block py-2.5 px-3 font-bold text-red-600 hover:bg-red-50 rounded-lg"
                     onClick={() => !item.children && setMobileOpen(false)}
                   >
                     {item.label}
@@ -117,7 +117,7 @@ export default function Navbar() {
                         <Link
                           key={child.href}
                           href={child.href}
-                          className="block py-2 px-3 text-sm text-slate-500 hover:text-primary-500"
+                          className="block py-2 px-3 text-sm font-semibold text-red-400 hover:text-red-500"
                           onClick={() => setMobileOpen(false)}
                         >
                           {child.label}

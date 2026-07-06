@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const departments = [
   {
-    slug: "computer",
+    slug: "computer_en",
     name: "Computer Engineering",
     //image: "/images/departments/computer.jpg",
   },
@@ -28,7 +28,7 @@ const departments = [
     //image: "/images/departments/mechanical.jpg",
   },
   {
-    slug: "hardware",
+    slug: "computer_sc",
     name: "Computer Science & Technology ",
     //image: "/images/departments/hardware.jpg",
   },

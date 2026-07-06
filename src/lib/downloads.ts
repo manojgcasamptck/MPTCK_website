@@ -1,6 +1,6 @@
 export const downloads = {
 
-  computer: {
+  computer_en: {
 
     name: "Computer Engineering",
 
@@ -15,12 +15,12 @@ export const downloads = {
 
             {
               title: "Notes",
-              url: "/downloads/computer/semester1/maths-notes.pdf",
+              url: "/downloads/computer_en/semester1/maths-notes.pdf",
             },
 
             {
               title: "Question Paper",
-              url: "/downloads/computer/semester1/maths-question-paper.pdf",
+              url: "/downloads/computer_en/semester1/maths-question-paper.pdf",
             },
 
           ],
@@ -33,7 +33,7 @@ export const downloads = {
 
             {
               title: "Notes",
-              url: "/downloads/computer/semester1/physics-notes.pdf",
+              url: "/downloads/computer_en/semester1/physics-notes.pdf",
             },
 
           ],
@@ -41,7 +41,26 @@ export const downloads = {
 
       ],
 
-      semester2: [],
+      semester2: [
+        {
+          subject: "Fundamentals of Electrical & Electronics",
+
+          files: [
+
+            {
+              title: "Notes",
+              url: "/downloads/computer_en/semester2/feee_notes2.pdf",
+            },
+
+            {
+              title: "Question Paper",
+              url: "/downloads/computer_en/semester2/feee_qp2024.pdf",
+            },
+
+          ],
+        },  
+
+     ],
 
       semester3: [
 
@@ -172,9 +191,9 @@ export const downloads = {
 
 
 
-  hardware: {
+  computer_sc: {
 
-    name: "Computer Hardware Engineering",
+    name: "Computer Science & Technology",
 
     semesters: {
 
@@ -196,9 +215,9 @@ export const downloads = {
 
 
 
-  general: {
+  communication: {
 
-    name: "General Department",
+    name: "Electronics & Communication Engineering",
 
     semesters: {
 

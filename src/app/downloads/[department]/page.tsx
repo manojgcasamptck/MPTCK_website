@@ -43,7 +43,7 @@ export default async function DepartmentPage({
 
             <Link
               key={semester}
-              href={`/downloads/${department}/semester-${semester}`}
+              href={`/downloads/${department}/semester${semester}`}
               className="
                 rounded-2xl
                 bg-gradient-to-br
