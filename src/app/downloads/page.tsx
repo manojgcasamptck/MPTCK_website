@@ -65,7 +65,20 @@ export default function DownloadsPage() {
             <Link
               key={dept.slug}
               href={`/downloads/${dept.slug}`}
-              className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition overflow-hidden"
+              className="
+                  rounded-2xl
+                  overflow-hidden
+                  shadow-md
+                  hover:shadow-xl
+                  transition-all
+                  duration-300
+                  bg-gradient-to-br
+                  from-blue-400
+                  to-indigo-0
+                  border
+                  border-green-100
+                  hover:-translate-y-1
+                  "
             >
 
              
