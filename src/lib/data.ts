@@ -32,10 +32,10 @@ export const navigation: NavItem[] = [
     href: "/departments",
     children: [
       { label: "Computer Engineering", href: "/departments/computer-engineering" },
-      { label: "Computer Science & Technology", href: "/departments/cst" },
+      { label: "Computer Science & Technology", href: "/departments/cg" },
       { label: "Electronics & Communication", href: "/departments/ece" },
       { label: "Electronics Engineering", href: "/departments/electronics" },
-      { label: "Electrical & Electronics", href: "/departments/eee" },
+      { label: "Electrical & Electronics", href: "/departments/ee" },
       { label: "Mechanical Engineering", href: "/departments/mechanical" },
     ],
   },
