@@ -17,9 +17,9 @@ Official website for **Model Polytechnic College Karunagappally** (MPTC), built 
 | Layer | Technology |
 |-------|------------|
 | Frontend | Next.js 16, React 19, Tailwind CSS 4, Framer Motion |
-| Backend | Next.js API Routes + Express.js (`server/`) |
-| Database | PostgreSQL |
-| Auth | JWT |
+| Backend | Static Next.js site for GitHub Pages |
+| Database | None (static site) |
+| Auth | None |
 | Charts | Recharts |
 
 ## Getting Started
@@ -32,20 +32,19 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000)
 
-## Admin Dashboard
+## Static Deployment
 
-- URL: `/admin`
-- Demo login: `admin@mptc.ac.in` / `admin123`
+This repository is configured as a static website ready for GitHub Pages. The site no longer includes a backend or admin panel, and all pages are served as pre-rendered static HTML/CSS/JS.
 
-## Database Setup
+## Getting Started
 
 ```bash
-createdb mptc
-psql mptc < database/schema.sql
-cp .env.example .env
-# Edit DATABASE_URL in .env
-npm run server   # Express API on port 5000
+cd MPTC_WEBSITE
+npm install
+npm run dev
 ```
+
+Open [http://localhost:3000](http://localhost:3000)
 
 ## Project Structure
 

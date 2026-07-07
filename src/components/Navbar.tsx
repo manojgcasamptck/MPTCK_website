@@ -28,9 +28,6 @@ export default function Navbar() {
             <a href={siteConfig.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-gold-400 transition-colors">
               Instagram
             </a>
-            <Link href="/admin" className="hover:text-gold-400 transition-colors">
-              Admin
-            </Link>
           </div>
         </div>
       </div>
