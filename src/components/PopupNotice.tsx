@@ -64,22 +64,25 @@ export default function PopupNotice() {
 
 {popup.image_url && (
 
-<div className="flex justify-center bg-white">
+<div className="flex justify-center bg-white p-2">
 
-    <Image
-      src={popup.image_url}
-      alt={popup.title}
-      width={650}
-      height={950}
-      className="
-      w-full
+  <Image
+    src={popup.image_url}
+    alt={popup.title}
+    width={800}
+    height={1200}
+    priority
+    className="
+      w-auto
       h-auto
+      max-w-[90vw]
+      max-h-[90vh]
       object-contain
-      "
-      priority
-    />
+      rounded-lg
+    "
+  />
 
-  </div>
+</div>
 
 )}
 
@@ -110,16 +113,7 @@ export default function PopupNotice() {
 <div className="p-2">
   <div className="flex flex-wrap justify-center gap-4">
 
-{popup.pdf_url && (
-  <a
-    href={popup.pdf_url}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-xl transition"
-  >
-    📄 Download Prospectus
-  </a>
-)}
+
 
 </div>
 
@@ -127,18 +121,7 @@ export default function PopupNotice() {
 
   <div className="flex justify-center flex-wrap gap-4">
 
-    {popup.pdf_url && (
-
-      <a
-        href={popup.pdf_url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-semibold transition"
-      >
-        📄 Download Prospectus
-      </a>
-
-    )}
+   
 
     {popup.button_text && popup.button_link && (
 

@@ -3,35 +3,86 @@
 import { useEffect, useState } from "react";
 import { supabase } from "@/lib/supabase";
 
+interface NewsItem {
+  id: number;
+  title: string;
+}
+
 export default function NewsTicker() {
-  const [news, setNews] = useState<any[]>([]);
+  const [news, setNews] = useState<NewsItem[]>([]);
 
   useEffect(() => {
     loadNews();
   }, []);
 
   async function loadNews() {
-    const { data } = await supabase
+    const { data, error } = await supabase
       .from("news_events")
-      .select("*")
-      .order("date", { ascending: false });
+      .select("id,title")
+      .order("created_at", { ascending: false })
+      .limit(5);
 
-    setNews(data || []);
+    if (!error && data) {
+      setNews(data);
+    }
   }
 
   return (
-    //<div className="bg-red-600 text-white overflow-hidden py-3">
-    <div className="group overflow-hidden">
-      <div className="flex animate-marquee whitespace-nowrap group-hover:[animation-play-state:paused]">
-        {news.map((item) => (
-          <span
-            key={item.id}
-            className="mx-10 font-semibold text-red-500"
-          >
-            📢 {item.title}
-          </span>
-        ))}
+    <div className="bg-blue-900 shadow-lg">
+
+      <div className="flex items-center">
+
+        {/* Left Badge */}
+
+        <div
+          className="
+            bg-red-600
+            text-white
+            font-bold
+            px-6
+            py-3
+            uppercase
+            tracking-wide
+            shrink-0
+          "
+        >
+          📢 LATEST NEWS
+        </div>
+
+        {/* Marquee */}
+
+        <div className="overflow-hidden flex-1">
+
+          <div className="ticker group">
+
+            <div className="ticker-content group-hover:pause-animation">
+
+              {[...news, ...news].map((item, index) => (
+
+                <span
+                  key={`${item.id}-${index}`}
+                  className="
+                    mx-12
+                    text-white
+                    font-semibold
+                    text-lg
+                    inline-flex
+                    items-center
+                  "
+                >
+                  📌 {item.title}
+                </span>
+
+              ))}
+
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
+
     </div>
   );
 }

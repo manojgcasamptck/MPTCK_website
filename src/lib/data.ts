@@ -47,7 +47,7 @@ export const navigation: NavItem[] = [
       { label: "Courses Offered", href: "/admissions/courses" },
       { label: "Fee Structure", href: "/admissions/fee-structure" },
       { label: "Application Process", href: "/admissions/application-process" },
-      { label: "Download Prospectus", href: "/admissions/prospectus" },
+      
     ],
   },
   {
@@ -101,7 +101,7 @@ export const navigation: NavItem[] = [
       { label: "Workshops", href: "/facilities/workshops" },
       { label: "Smart Classrooms", href: "/facilities/smart-classrooms" },
       { label: "Cafeteria", href: "/facilities/cafeteria" },
-     
+      { label: "Industry on Campus (IOC)", href: "/facilities/ioc",},
     ],
   },
 

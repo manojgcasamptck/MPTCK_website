@@ -89,7 +89,13 @@ export default function MandatoryDisclosurePage() {
                       Approval
                     </td>
                     <td>
-                      AICTE
+                      AICTE 
+                    </td>
+                    <td>
+                    AICTE Permanent Affiliation ID 1-451778741
+                    </td>
+                    <td>
+                      All india Survey on Higher Educatio(AISHE) Code: S-12569
                     </td>
                   </tr>
 
@@ -99,6 +105,9 @@ export default function MandatoryDisclosurePage() {
                     </td>
                     <td>
                       SBTE Kerala
+                    </td>
+                    <td>
+                      SBTE Affiliation Number: SBTE104601
                     </td>
                   </tr>
 
