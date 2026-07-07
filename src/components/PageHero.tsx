@@ -9,7 +9,7 @@ interface PageHeroProps {
 export default function PageHero({
   title,
   subtitle,
-  image = "/images/MPTC2.jpeg",
+  image = "/images/colimg9.jpg",
 }: PageHeroProps) {
   return (
     <section className="relative h-72 md:h-80 lg:h-96 flex items-end overflow-hidden">
@@ -19,7 +19,7 @@ export default function PageHero({
         alt={title}
         fill
         priority
-        sizes="100vw"
+        sizes="50vw"
         className="object-cover"
       />
 

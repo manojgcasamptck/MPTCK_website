@@ -13,7 +13,7 @@ const links = [
 export default function AdmissionsPage() {
   return (
     <>
-      <PageHero title="Admissions" subtitle="Join MPTC Karunagappally" image="/images/brochure.jpeg" />
+      <PageHero title="Admissions" subtitle="Join MPTC Karunagappally" /> 
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-4">
           <Reveal>

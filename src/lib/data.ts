@@ -63,7 +63,7 @@ export const navigation: NavItem[] = [
   },
   {
     label: "Students",
-    href: "#",
+    href: "/student-life",
     children: [
       {
         label: "Grievance Redressal",
