@@ -25,22 +25,40 @@ export default function PageHero({
 
       {/* Blue Overlay */}
 
-      <div className="absolute inset-0 bg-blue-900/70"></div>
+      <div className="absolute inset-0 bg-blue-950/80"></div>
 
       {/* Bottom Gradient */}
 
       <div className="absolute inset-0 bg-gradient-to-t from-blue-950/90 via-blue-900/40 to-transparent"></div>
 
-      <div className="relative z-10 max-w-7xl mx-auto w-full px-6 pb-12">
+      <div className="page-container relative z-10 pb-12">
 
-        <h1 className="font-poppins font-bold text-white text-4xl md:text-5xl drop-shadow-lg">
-          {title}
-        </h1>
+      <h1
+  className="
+    text-white
+    text-4xl
+    md:text-5xl
+    lg:text-6xl
+    font-bold
+    drop-shadow-2xl
+  "
+>
+  {title}
+</h1>
 
         {subtitle && (
-          <p className="mt-3 text-lg md:text-xl text-blue-100 max-w-3xl">
-            {subtitle}
-          </p>
+         <p
+         className="
+           mt-4
+           text-blue-100
+           text-lg
+           md:text-xl
+           max-w-3xl
+           drop-shadow-lg
+         "
+       >
+         {subtitle}
+       </p>
         )}
 
       </div>

@@ -13,18 +13,21 @@ export default function ContentPage({ content, image, children }: ContentPagePro
     <>
       <PageHero title={content.title} subtitle={content.subtitle} image={image} />
       <section className="py-16">
-        <div className="max-w-4xl mx-auto px-4">
+      <div className="page-container max-w-5xl">
           <Reveal>
             <div className="prose prose-slate max-w-none">
               {content.content.map((para, i) => (
-                <p key={i} className="text-slate-600 leading-relaxed mb-4 text-lg">
-                  {para}
-                </p>
+               <p key={i} className="body-text mb-5">
+               {para}
+             </p>
               ))}
               {content.bullets && (
                 <ul className="space-y-2 mt-6">
                   {content.bullets.map((item) => (
-                    <li key={item} className="flex items-start gap-3 text-slate-600">
+                    <li
+                    key={item}
+                    className="body-text flex items-start gap-3"
+                    >
                       <span className="w-2 h-2 rounded-full bg-gold-400 mt-2 shrink-0" />
                       {item}
                     </li>

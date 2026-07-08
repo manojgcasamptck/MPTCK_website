@@ -90,25 +90,25 @@ export default function Hero() {
             </Link>
             <Link
               href="/departments"
-              className="bg-white/10 border border-white/30 text-white px-7 py-3.5 rounded-lg font-semibold hover:bg-white/20 transition-all inline-flex items-center gap-2"
+              className="bg-white/10 border border-white/30 text-white px-7 py-3.5 rounded-lg font-semibold hover:bg-white/50 transition-all inline-flex items-center gap-2"
             >
               Explore Departments
             </Link>
             <Link
               href="/placement/statistics"
-              className="border border-gold-400/50 text-red-500 px-7 py-3.5 rounded-lg font-semibold hover:bg-gold-400/10 transition-all inline-flex items-center gap-2"
+              className="border border-gold-400/50 text-red-500 px-7 py-3.5 rounded-lg font-semibold hover:bg-green-500/50 transition-all inline-flex items-center gap-2"
             >
               Placement Statistics
             </Link>
             <Link
               href="/register"
-              className="border border-red-500/50 text-green-500 px-7 py-3.5 rounded-lg font-semibold hover:bg-red-500/10 transition-all inline-flex items-center gap-2"
+              className="border border-red-500/50 text-green-500 px-7 py-3.5 rounded-lg font-semibold hover:bg-red-500/50 transition-all inline-flex items-center gap-2"
             >
               <User size={16} /> Register for Spot Admission
             </Link>
             <Link
               href="/contact"
-              className="border border-gold-400/50 text-violet-500 px-7 py-3.5 rounded-lg font-semibold hover:bg-gold-400/10 transition-all inline-flex items-center gap-2"
+              className="border border-gold-400/50 text-orange-500 px-7 py-3.5 rounded-lg font-semibold hover:bg-gold-500/50 transition-all inline-flex items-center gap-2"
             >
               Contact Us
             </Link>
