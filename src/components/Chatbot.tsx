@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import { MessageCircle, X, Send } from "lucide-react";
+import { useEffect, useId, useRef, useState } from "react";
+import { X, Send } from "lucide-react";
 import { siteConfig } from "@/lib/utils";
 import { departments } from "@/lib/data";
 
@@ -10,6 +10,117 @@ type ChatMessage = {
   text: string;
   quickReplies?: string[];
 };
+
+/**
+ * Cute little robot-girl face used as Mitra's avatar — a simple inline SVG
+ * so there's no extra image asset to host/optimize. `size` controls both
+ * width and height in pixels. Gradient ids are namespaced per-instance
+ * (via useId) since this component renders more than once on screen at
+ * the same time (launcher button + chat header).
+ */
+function MitraAvatar({ size = 28, className = "" }: { size?: number; className?: string }) {
+  const uid = useId().replace(/[:]/g, "");
+  const headId = `mitraHead-${uid}`;
+  const cheekId = `mitraCheek-${uid}`;
+  const eyeId = `mitraEye-${uid}`;
+  const bowId = `mitraBow-${uid}`;
+
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 64 64"
+      className={className}
+      role="img"
+      aria-label="Mitra avatar"
+    >
+      <defs>
+        <linearGradient id={headId} x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor="#FFFFFF" />
+          <stop offset="100%" stopColor="#FCE7F3" />
+        </linearGradient>
+        <radialGradient id={cheekId}>
+          <stop offset="0%" stopColor="#F9A8D4" stopOpacity="0.85" />
+          <stop offset="100%" stopColor="#F9A8D4" stopOpacity="0" />
+        </radialGradient>
+        <radialGradient id={eyeId} cx="35%" cy="30%">
+          <stop offset="0%" stopColor="#7DD3FC" />
+          <stop offset="100%" stopColor="#0EA5E9" />
+        </radialGradient>
+        <linearGradient id={bowId} x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stopColor="#F472B6" />
+          <stop offset="100%" stopColor="#DB2777" />
+        </linearGradient>
+      </defs>
+
+      {/* soft drop shadow under the head */}
+      <ellipse cx="32" cy="55" rx="19" ry="3" fill="#EC4899" opacity="0.12" />
+
+      {/* antenna with sparkle tip */}
+      <line x1="32" y1="7" x2="32" y2="15" stroke="#F472B6" strokeWidth="2.5" strokeLinecap="round" />
+      <g transform="translate(32,5)">
+        <path
+          d="M0 -4 L1.3 -1.3 L4 0 L1.3 1.3 L0 4 L-1.3 1.3 L-4 0 L-1.3 -1.3 Z"
+          fill="#FBCFE8"
+        />
+        <circle r="1.6" fill="#fff" />
+      </g>
+
+      {/* head */}
+      <rect
+        x="9"
+        y="14"
+        width="46"
+        height="39"
+        rx="17"
+        fill={`url(#${headId})`}
+        stroke="#F472B6"
+        strokeWidth="2"
+      />
+      {/* subtle top-left gloss */}
+      <path d="M16 22 Q22 16 30 16" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" fill="none" opacity="0.7" />
+
+      {/* side "ear" bobbles */}
+      <circle cx="8" cy="33" r="4.5" fill="#F9A8D4" />
+      <circle cx="8" cy="33" r="1.6" fill="#fff" opacity="0.7" />
+      <circle cx="56" cy="33" r="4.5" fill="#F9A8D4" />
+      <circle cx="56" cy="33" r="1.6" fill="#fff" opacity="0.7" />
+
+      {/* hair fringe */}
+      <path d="M16 19 Q32 6 48 19" fill="none" stroke="#F472B6" strokeWidth="2" strokeLinecap="round" />
+      <path d="M21 16 Q24 11 27 15" fill="none" stroke="#F472B6" strokeWidth="1.6" strokeLinecap="round" />
+      <path d="M37 15 Q40 11 43 16" fill="none" stroke="#F472B6" strokeWidth="1.6" strokeLinecap="round" />
+
+      {/* bow */}
+      <g transform="translate(32,13)">
+        <path d="M-7 -3 Q-1 0 -7 3 Q-8 0 -7 -3 Z" fill={`url(#${bowId})`} />
+        <path d="M7 -3 Q1 0 7 3 Q8 0 7 -3 Z" fill={`url(#${bowId})`} />
+        <circle r="2" fill="#BE185D" />
+      </g>
+
+      {/* blush */}
+      <circle cx="16" cy="41" r="5" fill={`url(#${cheekId})`} />
+      <circle cx="48" cy="41" r="5" fill={`url(#${cheekId})`} />
+
+      {/* eyes */}
+      <circle cx="24" cy="34" r="5.2" fill={`url(#${eyeId})`} />
+      <circle cx="40" cy="34" r="5.2" fill={`url(#${eyeId})`} />
+      <circle cx="24" cy="34" r="5.2" fill="none" stroke="#0369A1" strokeWidth="0.6" opacity="0.4" />
+      <circle cx="40" cy="34" r="5.2" fill="none" stroke="#0369A1" strokeWidth="0.6" opacity="0.4" />
+      <circle cx="25.8" cy="32" r="1.6" fill="#fff" />
+      <circle cx="41.8" cy="32" r="1.6" fill="#fff" />
+      <circle cx="22.5" cy="36" r="0.8" fill="#fff" opacity="0.8" />
+      <circle cx="38.5" cy="36" r="0.8" fill="#fff" opacity="0.8" />
+
+      {/* tiny eyelash flicks for extra cuteness */}
+      <path d="M19.5 30 l-2 -1.5" stroke="#0369A1" strokeWidth="1" strokeLinecap="round" opacity="0.5" />
+      <path d="M44.5 30 l2 -1.5" stroke="#0369A1" strokeWidth="1" strokeLinecap="round" opacity="0.5" />
+
+      {/* smile */}
+      <path d="M25 44 Q32 50 39 44" fill="none" stroke="#DB2777" strokeWidth="2.3" strokeLinecap="round" />
+    </svg>
+  );
+}
 
 /**
  * -----------------------------------------------------------------------
@@ -232,6 +343,7 @@ export default function Chatbot() {
   ]);
   const [input, setInput] = useState("");
   const [isTyping, setIsTyping] = useState(false);
+  const [showCaption, setShowCaption] = useState(true);
   const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -259,20 +371,41 @@ export default function Chatbot() {
 
   return (
     <>
+      {!open && showCaption && (
+        <div className="fixed bottom-8 right-24 z-50 flex items-center gap-2 bg-white text-slate-700 text-sm px-3 py-2 rounded-xl shadow-lg border border-gray-100 animate-in fade-in slide-in-from-right-2">
+          <span>Hi, I'm Mitra. How can I help you?</span>
+          <button
+            onClick={() => setShowCaption(false)}
+            aria-label="Dismiss message"
+            className="text-slate-400 hover:text-slate-600"
+          >
+            <X size={14} />
+          </button>
+        </div>
+      )}
+
       <button
-        onClick={() => setOpen(true)}
-        className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-primary-500 text-white rounded-full shadow-lg hover:bg-primary-600 transition-all flex items-center justify-center"
+        onClick={() => {
+          setOpen(true);
+          setShowCaption(false);
+        }}
+        className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-primary-500 rounded-full shadow-lg hover:bg-primary-600 transition-all flex items-center justify-center overflow-hidden"
         aria-label="Open chatbot"
       >
-        <MessageCircle size={24} />
+        <MitraAvatar size={36} />
       </button>
 
       {open && (
         <div className="fixed bottom-24 right-6 z-50 w-80 sm:w-96 bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden flex flex-col max-h-[560px]">
           <div className="bg-primary-500 text-white px-4 py-3 flex items-center justify-between">
-            <div>
-              <div className="font-semibold text-sm">MPTC Assistant</div>
-              <div className="text-primary-100 text-xs">Mitra · Help Desk</div>
+            <div className="flex items-center gap-2.5">
+              <div className="w-9 h-9 rounded-full bg-white/90 flex items-center justify-center shrink-0">
+                <MitraAvatar size={26} />
+              </div>
+              <div>
+                <div className="font-semibold text-sm">MPTC Assistant</div>
+                <div className="text-primary-100 text-xs">Mitra · Help Desk</div>
+              </div>
             </div>
             <button onClick={() => setOpen(false)} aria-label="Close chat">
               <X size={20} />
