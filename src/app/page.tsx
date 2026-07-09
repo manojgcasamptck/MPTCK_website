@@ -206,7 +206,7 @@ export default function HomePage() {
                   { label: "Highest Package", display: "4 LPA" },
                   { label: "Average Package", display: "2.5 LPA" },
                   { label: "Students Placed (2025-26)", val: 515, sfx: "+" },
-                  { label: "Companies (2025-26)", val: 13, sfx: "+" },
+                  { label: "Companies (2025-26)", val: 90, sfx: "+" },
                 ].map((item) => (
                   <div key={item.label} className="bg-white/10 backdrop-blur border border-white/20 rounded-2xl p-6 text-center text-white">
                     <div className="text-3xl font-bold font-poppins text-gold-400">
