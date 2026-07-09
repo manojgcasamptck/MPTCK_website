@@ -80,9 +80,13 @@ export default function Hero() {
   </h1>
 </div>
 
-          <p className="text-primary-100 text-lg md:text-xl mb-8 max-w-xl">
-            {siteConfig.tagline}
-          </p>
+<p
+  className="font-bold italic text-white text-2xl mb-8 max-w-xl drop-shadow-lg"
+  style={{ fontFamily: "Georgia, serif" }}
+>
+  {siteConfig.tagline}
+</p>
+         
 
           <div className="flex flex-wrap gap-4">
             <Link href="/admissions" className="btn-gold text-base py-3.5 px-3">
@@ -90,7 +94,7 @@ export default function Hero() {
             </Link>
             <Link
               href="/departments"
-              className="bg-white/10 border border-white/30 text-white px-7 py-3.5 rounded-lg font-semibold hover:bg-white/50 transition-all inline-flex items-center gap-2"
+              className="bg-white/30 border border-white/30 text-white px-7 py-3.5 rounded-lg font-semibold hover:bg-white/50 transition-all inline-flex items-center gap-2"
             >
               Explore Departments
             </Link>
@@ -102,7 +106,7 @@ export default function Hero() {
             </Link>
             <Link
               href="/register"
-              className="border border-red-500/50 text-green-500 px-7 py-3.5 rounded-lg font-semibold hover:bg-red-500/50 transition-all inline-flex items-center gap-2"
+              className="border border-black/30  text-green-500 px-7 py-3.5 rounded-lg font-semibold hover:bg-red-500/50 transition-all inline-flex items-center gap-2"
             >
               <User size={16} /> Register for Spot Admission
             </Link>

@@ -328,7 +328,7 @@ export const stats = [
 export const whyChoose = [
   {
     title: "100% Placement Records",
-    description: "MPTC has established a strong reputation for successful campus placements through its active industry collaborations and dedicated placement support. Leading companies from diverse sectors regularly participate in recruitment drives, providing 100% placement rate for last 3 years.The studentsfrom this college participated in 170+ recruitment drives in 2025-26 academic year.",
+    description: "MPTC has established a strong reputation for successful campus placements through its active industry collaborations and dedicated placement support. Leading companies from diverse sectors regularly participate in recruitment drives, providing 100% placement rate for last 3 years.",
   },
   {
     title: "Well experienced & Qualified Faculty",
@@ -340,11 +340,11 @@ export const whyChoose = [
   },
   {
     title: "Industry Collaboration & Industry On Campus(IOC)",
-    description: "Active MoUs with leading companies for internships, training, and placements.Our campus hosts two Industry on Campus (IOC) units that provide students with valuable hands-on industrial experience. One unit focuses on the production of voltage stabilizers and inverters, while the other specializes in software development. Students from various departments actively participate in these units and gain exposure to real-world industrial practices.readiness,",
+    description: "Active MoUs with leading companies for internships, training, and placements.Our campus hosts two Industry on Campus (IOC) units that provide students with valuable hands-on industrial experience. One unit focuses on the production of voltage stabilizers and inverters, while the other specializes in software development.",
   },
   {
     title: "Government Controlled Institution",
-    description: "As a Government-controlled institution, MPTC upholds the highest standards of transparency, quality, and academic integrity. Students benefit from affordable education, recognized qualifications, experienced faculty, and a structured learning environment governed by established educational policies and regulations. The institution is committed to providing accessible and quality technical education to all sections of society.",
+    description: "As a Government-controlled institution, MPTC upholds the highest standards of transparency, quality, and academic integrity. Students benefit from affordable education, recognized qualifications, experienced faculty, and a structured learning environment governed by established educational policies and regulations.",
   },
   {
     title: "Excellent Academic Results",

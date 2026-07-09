@@ -79,22 +79,76 @@ export default function HomePage() {
               </p>
             </div>
           </Reveal>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {whyChoose.map((item, i) => {
-              const Icon = whyIcons[i];
-              return (
-                <Reveal key={item.title} delay={i * 80}>
-                  <div className="bg-slate-50 rounded-2xl p-7 border border-slate-100 hover:shadow-md transition-all hover:-translate-y-1 group">
-                    <div className="w-12 h-12 bg-primary-50 rounded-xl flex items-center justify-center mb-5 group-hover:bg-primary-500 transition-colors">
-                      <Icon size={22} className="text-primary-500 group-hover:text-white transition-colors" />
-                    </div>
-                    <h3 className="font-poppins font-semibold text-primary-900 text-lg mb-2">{item.title}</h3>
-                    <p className="text-slate-500 text-sm leading-relaxed">{item.description}</p>
-                  </div>
-                </Reveal>
-              );
-            })}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
+
+  {whyChoose.map((item, i) => {
+
+    const Icon = whyIcons[i];
+
+    return (
+
+      <Reveal key={item.title} delay={i * 80}>
+
+        <div
+          className="
+            bg-slate-50
+            rounded-2xl
+            p-7
+            border
+            border-slate-100
+            hover:shadow-xl
+            transition-all
+            duration-300
+            hover:-translate-y-2
+            group
+            h-full
+            flex
+            flex-col
+            min-h-[380px]
+          "
+        >
+
+          <div className="w-12 h-12 bg-primary-50 rounded-xl flex items-center justify-center mb-5 group-hover:bg-primary-500 transition-colors">
+
+            <Icon
+              size={22}
+              className="text-primary-500 group-hover:text-white transition-colors"
+            />
+
           </div>
+
+          <h3
+            className="
+              text-primary-900
+              text-xl
+              font-bold
+              mb-4
+              min-h-[64px]
+            "
+          >
+            {item.title}
+          </h3>
+
+          <p
+            className="
+              text-slate-600
+              text-base
+              leading-7
+              flex-grow
+            "
+          >
+            {item.description}
+          </p>
+
+        </div>
+
+      </Reveal>
+
+    );
+
+  })}
+
+</div>
         </div>
       </section>
 
