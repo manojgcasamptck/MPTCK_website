@@ -123,16 +123,7 @@ export default function PopupNotice() {
 
    
 
-    {popup.button_text && popup.button_link && (
-
-      <a
-        href={popup.button_link}
-        className="bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-xl font-semibold transition"
-      >
-        {popup.button_text}
-      </a>
-
-    )}
+    
 
   </div>
 
