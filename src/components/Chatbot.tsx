@@ -295,7 +295,7 @@ function getResponse(rawInput: string): { text: string; quickReplies?: string[] 
 
   if (GREETING_WORDS.some((w) => q === w || q.startsWith(w + " ") || q.includes(w))) {
     return {
-      text: "Hello! I'm Mitra 👋 I can help with admissions, courses, fees, placements, exams, hostel, and contact details. What would you like to know?",
+      text: "Hello! I'm Mitra(Model Polytechnic Intelligent Technical Response Agent) 👋 I can help with admissions, courses, fees, placements, exams, hostel, and contact details. What would you like to know?",
       quickReplies: FALLBACK_QUICK_REPLIES,
     };
   }
@@ -337,7 +337,7 @@ export default function Chatbot() {
   const [messages, setMessages] = useState<ChatMessage[]>([
     {
       role: "bot",
-      text: "Hello! I'm Mitra, your assistant to help you with admissions, courses, placements, fees, or contact details.",
+      text: "Hello! I'm Mitra (Model Polytechnic Intelligent Technical Response Agent), your assistant to help you with admissions, courses, placements, fees, or contact details.",
       quickReplies: FALLBACK_QUICK_REPLIES,
     },
   ]);
@@ -372,7 +372,7 @@ export default function Chatbot() {
   return (
     <>
       {!open && showCaption && (
-        <div className="fixed bottom-8 right-24 z-50 flex items-center gap-2 bg-white text-slate-700 text-sm px-3 py-2 rounded-xl shadow-lg border border-gray-100 animate-in fade-in slide-in-from-right-2">
+        <div className="fixed bottom-8 right-24 z-50 flex items-center gap-2 bg-blue-200 text-red-700 text-sm px-3 py-2 rounded-xl shadow-lg border border-gray-100 animate-in fade-in slide-in-from-right-2">
           <span>Hi, I'm Mitra. How can I help you?</span>
           <button
             onClick={() => setShowCaption(false)}
@@ -403,7 +403,7 @@ export default function Chatbot() {
                 <MitraAvatar size={26} />
               </div>
               <div>
-                <div className="font-semibold text-sm">MPTC Assistant</div>
+                <div className="font-semibold text-sm">Model Polytechnic Intelligent Technical Response Agent</div>
                 <div className="text-primary-100 text-xs">Mitra · Help Desk</div>
               </div>
             </div>

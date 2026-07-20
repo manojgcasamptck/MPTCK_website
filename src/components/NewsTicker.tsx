@@ -53,9 +53,9 @@ export default function NewsTicker() {
 
         <div className="overflow-hidden flex-1">
 
-          <div className="ticker group">
+        <div className="ticker">
 
-            <div className="ticker-content group-hover:pause-animation">
+               <div className="animate-marquee">
 
               {[...news, ...news].map((item, index) => (
 

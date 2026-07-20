@@ -380,13 +380,13 @@ CARDS
   
   }
   
-  .ticker-content{
+  .animate-marquee{
+
+    display:inline-flex;
   
-  display:inline-flex;
+    width:max-content;
   
-  width:max-content;
-  
-  animation:ticker 45s linear infinite;
+    animation:ticker 45s linear infinite;
   
   }
   
@@ -410,11 +410,13 @@ CARDS
   
   }
   
-  .pause-animation{
-  
-  animation-play-state:paused;
-  
-  }
+ /* Pause scrolling on mouse hover */
+
+.ticker:hover .animate-marquee {
+
+  animation-play-state: paused;
+
+}
   
   @keyframes ticker{
   
